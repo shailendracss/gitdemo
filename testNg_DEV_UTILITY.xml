@@ -7,7 +7,7 @@
 
 	<!-- ${environment} -->
 
-	<test name="UTILITY_TEST">
+	<test name="UTILITY_TEST_DEMO">
 		<parameter name="environment" value="${environment}" />
 		<parameter name="browser" value="chrome" />
 		<parameter name="platform" value="" />
