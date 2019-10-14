@@ -1,0 +1,138 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SMOKE_SUITE" verbose="1" thread-count="1"
+	parallel="methods">
+	<parameter name="remoteURL" value="" /><!-- http://192.168.0.181:4444/wd/hub -->
+	<listeners>
+		<listener class-name="com.testNgListener.CustomListener_HMap" />
+	</listeners>
+
+	<!-- ${environment} -->
+
+	<test name="SMOKE_TESTS_">
+		<parameter name="environment" value="${environment}" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="platform" value="" />
+		<parameter name="user" value="SSR-RA1" />
+		<classes>
+			<class name="tests.recruit.RecruitmentModule">
+				<methods>
+
+
+					<!-- <include name="HCM196_Recruit_TC01_RAdmin_ApplicantListingColumnHeader"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM196_Recruit_TC02_RAdmin_QuickView"> <parameter 
+						name="user" value="Recruit Admin" /> </include> -->
+					<!-- <exclude name="HCM196_Recruit_TC03_RAdmin_SubStage"> <parameter 
+						name="user" value="Recruit Admin" /> </exclude> -->
+
+					<!-- <exclude name="HCM196_Recruit_TC04_RAdmin_Stage1ShowSeekAns"> <parameter 
+						name="user" value="Recruit Admin" /> </exclude> -->
+
+					<!-- <include name="HCM196_Recruit_TC05_RAdmin_ListingDropdown"> <parameter 
+						name="user" value="Recruit Admin" /> </include> -->
+
+
+					<!-- Start 198 jira point -->
+
+
+					<!-- FIX NAME -->
+					<!-- <exclude name="HCM198_Recruit_TC01_Recruiter_ApplicantListing"> 
+						<parameter name="user" value="Recruit Admin" /> </exclude> -->
+
+					<!-- <exclude name="HCM198_Recruit_TC02_Recruiter_FlagedoOrDuplicantAppNot"> 
+						<parameter name="user" value="Recruit Admin" /> </exclude> -->
+
+					<!-- FIX NAME -->
+					<!-- <include name="HCM198_Recruit_TC03_Recruiter_QuickView"> <parameter 
+						name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- Recruit_TC04_ApplicantId is pending because not testable -->
+
+					<!-- <exclude name="HCM198_Recruit_TC04_Recruiter_ApplicantId"> <parameter 
+						name="user" value="Recruit Admin" /> </exclude> -->
+
+					<!-- <exclude name="HCM198_Recruit_TC05_Recruiter_PendingSubStage"> 
+						<parameter name="user" value="Recruit Admin" /> </exclude> -->
+
+					<!-- Not able to test beacuse stages not working -->
+					<!-- <exclude name="HCM198_Recruit_TC06_Recruiter_SeekAnswerStage1"> 
+						<parameter name="user" value="Recruit Admin" /> </exclude> -->
+
+					<!-- <include name="HCM198_Recruit_TC07_Recruiter_FilterListingDropdown"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM198_Recruit_TC07_Recruiter_FilterListingDropdown"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+
+					<!-- Start Jira point 188 -->
+
+					<!-- <include name="HCM188_Recruit_TC01_RecruiterAdmin_CreateJobSelectDataOnDropdown"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM188_Recruit_TC02_RecruiterAdmin_VerifyJobTypeJobCategoryJobSubCategoryEmploymentTypeSalaryRange"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM188_Recruit_TC03_RecruiterAdmin_CheckSalaryCheckBoxFunction"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM188_Recruit_TC04_RecruiterAdmin_VerifyJobDetailsOnPreviewpost"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM188_Recruit_TC07_RecruiterAdminCreateJob_CheckALlRequiredValidation"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM188_Recruit_TC14_RecruiterAdminJob_ResetFunctionality"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM188_Recruit_TC15_RecruiterAdminJob_SaveAsDraftFunctionality"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM188_Recruit_TC16_RecruiterJobVerify_JobDetailsOnPreviewAndJobPost"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM188_Recruit_TC09_RecruiterJobVerify_DateRecurringCheckBox"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM188_Recruit_TC013_RecruiterJobVerify_TextLayOutSection"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+					<!-- <include name="HCM188_Recruit_TC08_RecruiterJobVerify_ValidationStartDateOrEndDate"> 
+						<parameter name="user" value="Recruit Admin" /> </include> -->
+
+
+					<!-- Create Task Sprint 3 Check from here -->
+					<!-- <include name="HCM_Recruit_TC01_RecruiterCreateTask_CheckMaxApplicantValidation"> 
+						<parameter name="user" value="Recruit Admin" /> 
+					</include>-->
+					
+					<!--<include name="HCM_Recruit_TC02_RecruiterCreateTask_VerifyUI">
+						<parameter name="user" value="Recruit Admin" />
+					</include> -->
+					
+					<!-- <include
+						name="HCM_Recruit_TC03_RecruiterCreateTask_SearchRecruiter">
+						<parameter name="user" value="Recruit Admin" />
+					</include> -->
+					
+					<include
+						name="HCM_Recruit_TC04_RecruiterCreateTask_CreateNewTask">
+						<parameter name="user" value="Recruit Admin" />
+					</include>
+					
+					<!-- <include
+						name="HCM_Recruit_TC05_RecruiterCreateTask_DateTimeDuration">
+						<parameter name="user" value="Recruit Admin" />
+					</include> -->
+					
+					<!-- <include
+						name="HCM_Recruit_TC06_RecruiteTask_VerifyUI">
+						<parameter name="user" value="Recruit Admin" />
+					</include> -->
+					
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

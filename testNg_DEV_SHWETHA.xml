@@ -1,0 +1,187 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Admin_Suit" verbose="1" thread-count="1" parallel="methods">
+	<parameter name="remoteURL" value="" /><!-- http://192.168.0.181:4444/wd/hub -->
+	<listeners>
+		<listener class-name="com.testNgListener.CustomListener_HMap" />
+	</listeners>
+
+	<!-- ${environment} -->
+
+	<test name="ADMIN_TESTS_">
+		<parameter name="environment" value="${environment}" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="platform" value="" />
+		<classes>
+			<class name="tests.admin.AdminModule">
+				<methods>
+					
+					  <!-- <include name="TC01_Admin_UIVerification_UserMgmt">
+						<parameter name="user" value="Admin" />
+					</include>
+					 -->
+					<!--<include name="TC02_Admin_FilterDropdown">
+						<parameter name="user" value="Admin" /> 
+					</include>
+					
+					<include name="TC03_Admin_TextSearch">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+					   <!-- <include name="TC04_Admin_CreateUser_InactiveUser">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+					<!-- 
+					<include name="TC05_Admin_CreateUser_Inactive_ActiveUser">
+						<parameter name="user" value="Admin" />
+					</include>  -->  
+					 
+					 
+					<!--  <include name="TC06_Admin_CreateUser_ArchiveUser">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+				  <!--   <include name="TC07_Admin_EditUser"> 
+						<parameter name="user" value="Admin" /> 
+						</include> -->
+						
+						
+				   <!-- all are working  -->
+					<!-- 
+					<include name="TC08_Admin_CreateNewUser_CheckRole_Admin">  
+						<parameter name="user" value="Admin" /> 
+					</include>
+					 -->
+					
+					<!-- <include name="TC09_Admin_CreateNewUser_CheckRole_Participants">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+				   <!--  <include name="TC10_Admin_CreateNewUser_CheckRole_Member">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+					<!-- <include name="TC11_Admin_CreateNewUser_CheckRole_Organization">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+					 <!-- <include name="TC12_Admin_CreateNewUser_CheckRole_Schedule">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+				     <!-- <include name="TC13_Admin_CreateNewUser_CheckRole_Fms">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+					<!--<include name="TC14_Admin_CreateNewUser_CheckRole_Fms_Incidents">
+						<parameter name="user" value="Admin" /> 
+					</include>  -->
+					
+			      <!--  <include name="TC15_Admin_CreateNewUser_CheckRole_Imail">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+					<!-- <include name="TC16_Admin_CreateNewUser_CheckRole_Recruitment">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+				   <!-- <include name="TC17_Admin_CreateNewUser_CheckRole_RecruitmentAdmin">
+						<parameter name="user" value="Admin" /> 
+					</include>-->
+					
+					<!--<include name="TC18_Admin_CreateNewUser_CheckRole_Crm">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+					<!-- 
+					<include name="TC19_Admin_CreateNewUser_CheckRole_CrmAdmin">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+				
+
+					<!-- This is not yet developed TC20 -->
+					
+					<!--<include name="TC20_Admin_CreateNewUser_CheckRole_Finance">
+						<parameter name="user" value="Admin" /> 
+					</include>-->
+					
+					
+					 <!--  <include name="TC21_Admin_Logs_VerifyPageContent">
+						<parameter name="user" value="Admin" /> 
+					</include>  --> 
+					<!-- 
+					<include name="TC22_Admin_Logs_Text_Search">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+					<include name="TC23_Admin_Logs_OnDatePicker">
+						<parameter name="user" value="Admin" /> 
+					</include>
+					
+					<!-- <include name="TC24_Admin_Logs_Verify_For_From_And_TO_datePicker">
+						<parameter name="user" value="Admin" /> 
+					</include>
+					
+					
+					<include name="TC25_Admin_Logs_Verify_For_Logs_Participants">
+						<parameter name="user" value="Admin" /> 
+					</include>
+					
+					<include name="TC26_Admin_Logs_Verify_For_Logs_Organisation">
+						<parameter name="user" value="Admin" /> 
+					</include>
+					
+					<include name="TC27_Admin_Logs_Verify_For_Logs_Fms">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+					<!-- <include name="TC28_Admin_Logs_Verify_For_Logs_Imail">
+						<parameter name="user" value="Admin" /> 
+					</include> -->
+					
+					<!-- <include name="TC29_Admin_Logs_Verify_For_Logs_Members">
+						<parameter name="user" value="Admin" /> 
+					</include>
+					
+					<include name="TC30_Admin_Logs_Verify_For_Logs_Schedule">
+						<parameter name="user" value="Admin" /> 
+					</include>-->
+					
+					 <!-- <include name="TC31_Admin_Logs_Verify_For_Export_Selected_Button">
+						<parameter name="user" value="Admin" /> 
+					</include> 
+					 -->
+					<!--<include name="TC32_Admin_Logs_Verify_For_Pagination">
+						<parameter name="user" value="Admin" /> 
+					</include>
+					
+					
+					<include name="TC33_Admin_Approvals_Verify_For_Search">
+						<parameter name="user" value="Admin" /> 
+					</include>
+					
+					<include name="TC34_Admin_Approvals_Verify_For_On_datePicker">
+						<parameter name="user" value="Admin" /> 
+					</include>
+			      
+			       
+			       <include name="TC35_Admin_Approvals_Verify_For_Icon_Pin">
+						<parameter name="user" value="Admin" /> 
+				   </include>
+				   
+				    <include name="TC36_Admin_Approvals_Verify_For_Icon_View">
+						<parameter name="user" value="Admin" /> 
+				   </include>
+				 
+				   
+				   <include name="TC37_Admin_Approvals_Verify_For_Pagination">
+						<parameter name="user" value="Admin" /> 
+				   </include>  -->
+					
+				</methods>
+			</class>
+			
+		</classes>
+	</test>
+</suite>
