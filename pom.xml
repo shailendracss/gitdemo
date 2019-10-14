@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>Automation</groupId>
-	<artifactId>IOTRON-AutomationFramework</artifactId>
+	<artifactId>GITDEMO</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>IOTRON-AutomationFramework</name>
+	<name>GITDEMO</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
