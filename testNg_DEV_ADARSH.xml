@@ -8,7 +8,7 @@
 
 	<!-- ${environment} -->
 
-	<test name="SMOKE_TESTS_Demo_SSR">
+	<test name="SMOKE_TESTS_Djlemo_SSR">
 		<parameter name="environment" value="${environment}" />
 		<parameter name="browser" value="chrome" />
 		<parameter name="platform" value="" />
