@@ -8,7 +8,7 @@
 
 	<!-- ${environment} -->
 
-	<test name="SMOKE_TESTS_Djlemo_SSR">
+	<test name="SMOKE_TESTS_Djlemo_SSR  ">
 		<parameter name="environment" value="${environment}" />
 		<parameter name="browser" value="chrome" />
 		<parameter name="platform" value="" />
@@ -16,6 +16,8 @@
 		<classes>
 			<class name="tests.recruit.RecruitmentModule">
 				<methods>
+
+
 
 
 					<!-- <include name="HCM196_Recruit_TC01_RAdmin_ApplicantListingColumnHeader"> 
@@ -33,6 +35,10 @@
 						name="user" value="Recruit Admin" /> </include> -->
 
 
+					<!-- Start 198 jira point -->
+					
+					
+					<!-- Start 198 jira point -->
 					<!-- Start 198 jira point -->
 
 
